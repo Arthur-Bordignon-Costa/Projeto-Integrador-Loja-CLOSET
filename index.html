@@ -1,18 +1,78 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CLOSET</title>
-    <link rel="stylesheet" href="src/style/global.css">
-  </head>
-  <body>
-    <h1>CLOSET</h1>
-    <a href="catalogo.html">
-      <button>Ir para o catálogo</button>
-    </a>
 
-    <script type="module" src="/src/js/pages/home.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLOSET</title>
+  <link rel="stylesheet" href="src/style/global.css">
+</head>
+
+<body>
+  <main>
+    <!-- 1. Hero Section (Início) -->
+    <section class="hero-section">
+      <div class="hero-text">
+        <span class="badge">Closet / Nova Coleção</span>
+        <h1>A elegância que acompanha o seu movimento.</h1>
+        <!-- Botões de ação -->
+      </div>
+      <div class="hero-image">
+        <!-- Imagem principal com o "C" -->
+      </div>
+    </section>
+
+    <!-- 2. Grelha de 3 Colunas ("Para cada momento") -->
+    <section class="grid-section">
+      <div class="section-header">
+        <h2>Para cada momento</h2>
+        <p>Seu estilo não precisa escolher um só caminho.</p>
+      </div>
+      <div class="card-grid-3">
+        <!-- 3 Artigos (Casual, Esportivo, Esporte Fino) -->
+        <article class="card">...</article>
+        <article class="card">...</article>
+        <article class="card">...</article>
+      </div>
+    </section>
+
+    <!-- 3. Grelha de 4 Colunas ("Novos olhares") -->
+    <section class="grid-section">
+      <h2>Novos Olhares</h2>
+      <div class="card-grid-4">
+        <!-- 4 Artigos (Alfaiataria, Casual, Fitwear, Jeans) -->
+      </div>
+    </section>
+
+    <!-- 4. Secções de Destaque Intercaladas ("A Closet" e "Essentials") -->
+    <section class="split-section">
+      <div class="split-text">...</div>
+      <div class="split-image">...</div>
+    </section>
+
+    <section class="split-section reverse">
+      <div class="split-image">...</div>
+      <div class="split-text">...</div>
+    </section>
+
+    <!-- 5. Feed de Instagram ("Siga a Closet") -->
+    <section class="social-feed">
+      <h2>Siga a Closet</h2>
+      <div class="instagram-grid-5">
+        <!-- 5 Imagens -->
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. Rodapé -->
+  <footer class="site-footer">
+    <div class="footer-logo">CLOSET</div>
+    <nav class="footer-links">...</nav>
+    <div class="footer-contact">...</div>
+  </footer>
+
+  <script type="module" src="/src/js/pages/home.js"></script>
+</body>
+
 </html>
