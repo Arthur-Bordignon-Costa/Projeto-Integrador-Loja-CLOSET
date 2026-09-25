@@ -1,68 +1,101 @@
 <!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/public/img/logo/icon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CLOSET</title>
-  <link rel="stylesheet" href="src/style/global.css" />
-  <link rel="stylesheet" href="src/style/header.css" />
-  <link rel="stylesheet" href="src/style/main.css" />
-  <link rel="stylesheet" href="src/style/footer.css" />
-</head>
-<body>
-  <header class="headerPrincipal">
-    <div class="containerHeader">
-      <a href="/" class="logo">CLOSET</a>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/public/img/logo/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLOSET</title>
+    <link rel="stylesheet" href="src/style/global.css" />
+    <link rel="stylesheet" href="src/style/header.css" />
+    <link rel="stylesheet" href="src/style/main.css" />
+    <link rel="stylesheet" href="src/style/footer.css" />
+  </head>
+  <body>
+    <header class="headerPrincipal">
+      <div class="containerHeader">
+        <a href="/" class="logo">CLOSET</a>
 
-      <nav class="menuNavegacao">
-        <ul class="listaNavegacao">
-          <li>
-            <a href="#novidades">Novidades</a>
-          </li>
+        <nav class="menuNavegacao">
+          <ul class="listaNavegacao">
+            <li>
+              <a href="#novidades">Novidades</a>
+            </li>
 
-          <li>
-            <a href="#colecao">Coleção</a>
-          </li>
+            <li>
+              <a href="#colecao">Coleção</a>
+            </li>
 
-          <li>
-            <a href="#sobre">Sobre</a>
-          </li>
-        </ul>
-      </nav>
+            <li>
+              <a href="#sobre">Sobre</a>
+            </li>
+          </ul>
+        </nav>
 
-      <div class="containerContato">
-        <button id="btnWhatsApp">FALAR NO WHATSAPP</button>
-      </div>
-    </div>
-  </header>
-
-  <main class="conteudoPrincipal">
-    <section class="hero">
-      <div class="containerTextoHero">
-        <p class="subtituloTrilha">CLOSET / NOVA COLEÇÃO</p>
-
-        <h1>A ELEGÂNCIA QUE ACOMPANHA O SEU MOVIMENTO.</h1>
-
-        <p class="descricaoHero">
-          Moda feminina contemporânea para acompanhar todos os seus momentos —
-          do cotidiano às ocasiões que pedem algo a mais.
-        </p>
-
-        <div class="containerBotoesAcao">
-          <a href="/catalogo.html" class="btnExplorarColecao"> Explorar coleção </a>
-
-          <a href="#" class="btnVerNovidades">
-            Ver novidades →
-          </a>
+        <div class="containerContato">
+          <button class="numeroWhatsApp" id="btnWhatsApp" >FALAR NO WHATSAPP</button>
         </div>
       </div>
+    </header>
 
-      <div class="containerImagemHero">
-        <img id="imgBannerPrincipal" src="/img/logo/closet-logo-black.png" alt="Coleção CLOSET" />
-      </div>
-    </section>
-  </main>
-  <script type="module" src="/src/js/pages/home.js"></script>
-</body>
+    <main class="conteudoPrincipal">
+      <section class="hero">
+        <div class="containerTextoHero">
+          <p class="subtituloTrilha">CLOSET / NOVA COLEÇÃO</p>
+
+          <h1>A ELEGÂNCIA QUE ACOMPANHA O SEU MOVIMENTO.</h1>
+
+          <p class="descricaoHero">
+            Moda feminina contemporânea para acompanhar todos os seus momentos —
+            do cotidiano às ocasiões que pedem algo a mais.
+          </p>
+
+          <div class="containerBotoesAcao">
+            <a href="/catalogo.html" class="btnExplorarColecao">
+              Explorar coleção
+            </a>
+
+            <a href="#" class="btnVerNovidades"> Ver novidades → </a>
+          </div>
+        </div>
+
+        <div class="containerImagemHero">
+          <img
+            id="imgBannerPrincipal"
+            src="/img/logo/closet-logo-black.png"
+            alt="Coleção CLOSET"
+          />
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footerTopo">
+          <div class="footerMarca">
+            <h2>CLOSET</h2>
+            <p>Clássica | Atemporal | Fitwear</p>
+          </div>
+
+          <div class="footerLinks">
+            <div>
+              <h3>NAVEGAÇÃO</h3>
+              <a href="#novidades">Novidades</a>
+              <a href="#colecao">Coleção</a>
+              <a href="#sobre">Sobre</a>
+            </div>
+
+            <div>
+              <h3>CONTATO</h3>
+              <a target="_blank" class="numeroWhatsApp">WhatsApp</a>
+              <a target="_blank" href="https://www.instagram.com/closet.foz/">Instagram</a>
+              <a target="_blank" id="localizacao">Localização</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footerBottom">
+          <p>© 2026 CLOSET</p>
+          <p>Moda feminina</p>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="/src/js/pages/home.js"></script>
+  </body>
 </html>
