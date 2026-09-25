@@ -1,0 +1,70 @@
+.headerPrincipal {
+    width: 100%;
+    top: 0;
+    padding: 18px 4.5%;
+    position: fixed;
+    z-index: 1000;
+    background-color: #f6f4ee;
+   
+}
+
+.containerHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.menuNavegacao {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 35px;
+}
+
+.listaNavegacao {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.listaNavegacao a {
+    position: relative;
+    font-size: 9px;
+    letter-spacing: 0.3px;
+    color: #45423e;
+    transition: opacity 0.2s ease;
+}
+
+.listaNavegacao a:hover {
+    opacity: 0.55;
+}
+
+.containerContato {
+    display: flex;
+    align-items: center;
+}
+
+#btnWhatsApp {
+    padding: 9px 18px;
+    border-radius: 20px;
+    background-color: #20c968;
+    color: white;
+    font-size: 9px;
+    font-weight: 500;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+#btnWhatsApp:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}

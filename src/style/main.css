@@ -1,0 +1,213 @@
+.conteudoPrincipal {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.hero {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    padding: 25px 4.5% 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7%;
+}
+.containerTextoHero {
+
+    flex: 1;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subtituloTrilha {
+    margin-bottom: 22px;
+    font-size: 7px;
+    color: #7b7771;
+}
+
+.containerTextoHero h1 {
+    max-width: 530px;
+    margin-bottom: 18px;
+    font-size: clamp(38px, 4vw, 58px);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -1.5px;
+    color: #252321;
+}
+
+.descricaoHero {
+    max-width: 380px;
+    margin-bottom: 24px;
+    font-size: 11px;
+    line-height: 1.55;
+    color: #4e4b47;
+}
+
+.containerBotoesAcao {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.btnExplorarColecao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: #343230;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+.btnExplorarColecao:hover {
+    background-color: #1f1e1c;
+    transform: translateY(-1px);
+}
+.btnVerNovidades {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #3e3b38;
+   
+}
+
+
+.btnVerNovidades:hover {
+    opacity: 0.55;
+}
+
+.containerImagemHero {
+    flex: 1;
+    max-width: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgBannerPrincipal {
+    width: 100%;
+    max-width: 520px;
+    aspect-ratio: 1.12 / 1;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+
+    .hero {
+        gap: 40px;
+    }
+
+    .containerTextoHero h1 {
+        font-size: clamp(34px, 5vw, 48px);
+    }
+
+    .containerImagemHero {
+        max-width: 450px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .headerPrincipal {
+        padding: 18px 6%;
+    }
+    .containerHeader {
+        flex-wrap: wrap;
+    }
+
+    .menuNavegacao {
+        order: 3;
+        width: 100%;
+        margin: 5px 0 0;
+    }
+
+    .listaNavegacao {
+        width: 100%;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .containerContato {
+        margin-left: auto;
+    }
+    .hero {
+        min-height: auto;
+        padding: 45px 6% 60px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 45px;
+    }
+    .containerTextoHero {
+        max-width: none;
+    }
+    .subtituloTrilha {
+        margin-bottom: 18px;
+    }
+    .containerTextoHero h1 {
+        max-width: 600px;
+        font-size: clamp(38px, 11vw, 56px);
+        line-height: 0.98;
+    }
+    .descricaoHero {
+        max-width: 430px;
+        font-size: 11px;
+    }
+    .containerImagemHero {
+        width: 100%;
+        max-width: none;
+    }
+    #imgBannerPrincipal {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .headerPrincipal {
+        padding: 16px 5%;
+    }
+    .logo {
+        font-size: 16px;
+    }
+    #btnWhatsApp {
+        padding: 8px 13px;
+        font-size: 8px;
+    }
+    .listaNavegacao {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .hero {
+        padding: 35px 5% 45px;
+        gap: 35px;
+    }
+    .containerTextoHero h1 {
+        font-size: 39px;
+        letter-spacing: -1px;
+    }
+    .descricaoHero {
+        font-size: 10px;
+    }
+    .containerBotoesAcao {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+    .btnExplorarColecao {
+        min-height: 34px;
+        padding: 0 16px;
+    }
+}
