@@ -14,17 +14,14 @@
     <header class="headerPrincipal">
       <div class="containerHeader">
         <a href="/" class="logo">CLOSET</a>
-
         <nav class="menuNavegacao">
           <ul class="listaNavegacao">
             <li>
               <a href="#novidades">Novidades</a>
             </li>
-
             <li>
               <a href="#colecao">Coleção</a>
             </li>
-
             <li>
               <a href="#sobre">Sobre</a>
             </li>
@@ -32,7 +29,9 @@
         </nav>
 
         <div class="containerContato">
-          <button class="numeroWhatsApp" id="btnWhatsApp" >FALAR NO WHATSAPP</button>
+          <button class="numeroWhatsApp" id="btnWhatsApp">
+            FALAR NO WHATSAPP
+          </button>
         </div>
       </div>
     </header>
@@ -66,36 +65,85 @@
           />
         </div>
       </section>
-      <footer class="footer">
-        <div class="footerTopo">
-          <div class="footerMarca">
+
+      <section class="secaoLocalizacao">
+        <div class="localizacaoConteudo">
+          <div class="localizacaoInfo">
+            <span class="localizacaoTitulo">NOSSO ENDEREÇO</span>
+
             <h2>CLOSET</h2>
-            <p>Clássica | Atemporal | Fitwear</p>
-          </div>
 
-          <div class="footerLinks">
-            <div>
-              <h3>NAVEGAÇÃO</h3>
-              <a href="#novidades">Novidades</a>
-              <a href="#colecao">Coleção</a>
-              <a href="#sobre">Sobre</a>
+            <p class="localizacaoEndereco">
+              Av. Andradina, 612 - Itaipu A,<br />
+              Foz do Iguaçu — PR, CEP 85861-010
+            </p>
+
+            <div class="horarios">
+              <h3>HORÁRIOS DE ATENDIMENTO</h3>
+
+              <div class="horarioItem">
+                <span>Segunda a Sexta:</span>
+                <strong>10:00 às 18:30</strong>
+              </div>
+
+              <div class="horarioItem">
+                <span>Sábados:</span>
+                <strong>10:00 às 14:00</strong>
+              </div>
+
+              <div class="horarioItem">
+                <span>Domingos:</span>
+                <strong>Fechado</strong>
+              </div>
             </div>
 
-            <div>
-              <h3>CONTATO</h3>
-              <a target="_blank" class="numeroWhatsApp">WhatsApp</a>
-              <a target="_blank" href="https://www.instagram.com/closet.foz/">Instagram</a>
-              <a target="_blank" id="localizacao">Localização</a>
+            <div class="botoesLocalizacao">
+              <a target="_blank" class="btnMapa btnGoogle localizacao">
+                ▣ &nbsp; GOOGLE MAPS
+              </a>
             </div>
           </div>
-        </div>
 
-        <div class="footerBottom">
-          <p>© 2026 CLOSET</p>
-          <p>Moda feminina</p>
+          <div class="localizacaoImagem">
+            <img
+              src="/public/img/geral/porta-da-loja.png"
+              alt="Fachada da loja CLOSET"
+            />
+          </div>
         </div>
-      </footer>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footerTopo">
+        <div class="footerMarca">
+          <h2>CLOSET</h2>
+          <p>Clássica | Atemporal | Fitwear</p>
+        </div>
+
+        <div class="footerLinks">
+          <div>
+            <h3>NAVEGAÇÃO</h3>
+            <a href="#novidades">Novidades</a>
+            <a href="#colecao">Coleção</a>
+            <a href="#sobre">Sobre</a>
+          </div>
+
+          <div>
+            <h3>CONTATO</h3>
+            <a target="_blank" class="numeroWhatsApp">WhatsApp</a>
+            <a target="_blank" href="https://www.instagram.com/closet.foz/"
+              >Instagram</a
+            >
+            <a target="_blank" class="localizacao">Localização</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerBottom">
+        <p>© 2026 CLOSET</p>
+        <p>Moda feminina</p>
+      </div>
+    </footer>
     <script type="module" src="/src/js/pages/home.js"></script>
   </body>
 </html>
