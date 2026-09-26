@@ -201,6 +201,12 @@ body {
   background-color: var(--card-bg);
   overflow: hidden;
   border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-grid-3 .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(34, 34, 34, 0.10);
 }
 
 .card-grid-3 .card-image {
@@ -215,6 +221,11 @@ body {
   height: 100%;
   display: block;
   object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-grid-3 .card:hover .card-image img {
+  transform: scale(1.04);
 }
 
 .card-grid-3 .card-content {
@@ -260,6 +271,12 @@ body {
   background-color: var(--card-bg);
   overflow: hidden;
   border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-grid-4 .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(34, 34, 34, 0.10);
 }
 
 .card-grid-4 .card-image {
@@ -274,6 +291,11 @@ body {
   height: 100%;
   display: block;
   object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-grid-4 .card:hover .card-image img {
+  transform: scale(1.04);
 }
 
 .card-grid-4 .card-content {
@@ -292,14 +314,17 @@ body {
 }
 
 .card-grid-4 .card-content a {
+  display: inline-block;
   color: var(--text-dark);
   text-decoration: none;
   font-size: 0.68rem;
   letter-spacing: 0.08em;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .card-grid-4 .card-content a:hover {
   opacity: 0.6;
+  transform: translateX(4px);
 }
 
 
