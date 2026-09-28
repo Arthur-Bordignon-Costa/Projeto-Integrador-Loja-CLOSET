@@ -89,3 +89,14 @@
         gap: 8px;
     }
 }
+
+.instagram-grid-5 div {
+  background-color: var(--card-bg);
+  min-height: 300px;
+}
+
+.instagram-grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+}

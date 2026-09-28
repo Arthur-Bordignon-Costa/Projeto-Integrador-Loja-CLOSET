@@ -1,224 +1,302 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/public/img/logo/icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CLOSET</title>
-    
-    <!-- CSS Separado (Herdado da versão Incoming) -->
-    <link rel="stylesheet" href="src/style/global.css" />
-    <link rel="stylesheet" href="src/style/header.css" />
-    <link rel="stylesheet" href="src/style/main.css" />
-    <link rel="stylesheet" href="src/style/footer.css" />
-  </head>
-  
-  <body>
-    <!-- HEADER FUNCIONAL (Da versão Incoming) -->
-    <header class="headerPrincipal">
-      <div class="containerHeader">
-        <button class="btnMenu" id="btnMenu" aria-label="Abrir menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        
-        <a href="/" class="logo">CLOSET</a>
-        
-        <nav class="menuNavegacao" id="menuNavegacao">
-          <ul class="listaNavegacao">
-            <li><a href="#novidades">Novidades</a></li>
-            <li><a href="#colecao">Coleção</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-          </ul>
-        </nav>
 
-        <div class="containerContato">
-          <button class="numeroWhatsApp" id="btnWhatsApp">
-            FALAR NO WHATSAPP
-          </button>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/public/img/logo/icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLOSET</title>
+
+  <!-- CSS Separado (Herdado da versão Incoming) -->
+  <link rel="stylesheet" href="src/style/global.css" />
+  <link rel="stylesheet" href="src/style/header.css" />
+  <link rel="stylesheet" href="src/style/main.css" />
+  <link rel="stylesheet" href="src/style/footer.css" />
+</head>
+
+<body>
+  <!-- HEADER FUNCIONAL (Da versão Incoming) -->
+  <header class="headerPrincipal">
+    <div class="containerHeader">
+      <button class="btnMenu" id="btnMenu" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a href="/" class="logo">CLOSET</a>
+
+      <nav class="menuNavegacao" id="menuNavegacao">
+        <ul class="listaNavegacao">
+          <li><a href="#novidades">Novidades</a></li>
+          <li><a href="#colecao">Coleção</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>
+
+      <div class="containerContato">
+        <button class="numeroWhatsApp" id="btnWhatsApp">
+          FALAR NO WHATSAPP
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteudoPrincipal">
+
+    <!-- 1. NOVO HERO SECTION (Da versão Current) -->
+    <section class="hero-section">
+      <div class="hero-text">
+        <span class="badge">CLOSET / NOVA COLEÇÃO</span>
+
+        <h1>A elegância que acompanha o seu movimento.</h1>
+
+        <p class="hero-description">
+          Moda feminina contemporânea para acompanhar todos os seus momentos —
+          do cotidiano às ocasiões que pedem algo a mais.
+        </p>
+
+        <div class="hero-actions">
+          <!-- Link ajustado para manter a funcionalidade do Incoming -->
+          <a href="/catalogo.html" class="hero-button">EXPLORAR COLEÇÃO</a>
+          <a href="#novidades" class="hero-link">VER NOVIDADES →</a>
         </div>
       </div>
-    </header>
 
-    <main class="conteudoPrincipal">
+      <div class="hero-image">
+        <div class="hero-image-top">ESSENTIALS / 01</div>
+        <div class="hero-letter">C</div>
+        <div class="hero-image-line"></div>
+        <div class="hero-image-bottom">ELEGÂNCIA EM MOVIMENTO</div>
+      </div>
+    </section>
 
-      <!-- 1. NOVO HERO SECTION (Da versão Current) -->
-      <section class="hero-section">
-        <div class="hero-text">
-          <span class="badge">CLOSET / NOVA COLEÇÃO</span>
-          
-          <h1>A elegância que acompanha o seu movimento.</h1>
-          
-          <p class="hero-description">
-            Moda feminina contemporânea para acompanhar todos os seus momentos —
-            do cotidiano às ocasiões que pedem algo a mais.
+    <!-- 2. GRELHA DE 3 COLUNAS (Da versão Current) -->
+    <section class="grid-section">
+      <div class="section-header">
+        <span class="section-number">01 / ESTILO</span>
+        <h2>Para cada momento</h2>
+        <p>Seu estilo não precisa escolher um só caminho.</p>
+      </div>
+
+      <div class="card-grid-3">
+        <article class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80"
+              alt="Moda casual">
+          </div>
+          <div class="card-content">
+            <span class="card-number">01</span>
+            <h3>CASUAL</h3>
+            <p>Leve, versátil e feito para a rotina.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80"
+              alt="Moda esportiva">
+          </div>
+          <div class="card-content">
+            <span class="card-number">02</span>
+            <h3>ESPORTIVO</h3>
+            <p>Movimento com personalidade e estilo.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=800&q=80"
+              alt="Moda esporte fino">
+          </div>
+          <div class="card-content">
+            <span class="card-number">03</span>
+            <h3>ESPORTE FINO</h3>
+            <p>Elegância para quando o momento pede algo a mais.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. GRELHA DE 4 COLUNAS (Da versão Current) -->
+    <section class="grid-section novos-olhares" id="colecao">
+      <div class="section-header">
+        <span class="section-number">02 / COLEÇÃO</span>
+        <h2>Novos Olhares</h2>
+        <p>Descubra o que chegou à Closet.</p>
+      </div>
+
+      <div class="card-grid-4">
+        <article class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80"
+              alt="Alfaiataria">
+          </div>
+          <div class="card-content">
+            <span class="card-number">01</span>
+            <h3>ALFAIATARIA</h3>
+            <a href="#">VER COLEÇÃO →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=800&q=80"
+              alt="Moda casual">
+          </div>
+          <div class="card-content">
+            <span class="card-number">02</span>
+            <h3>CASUAL</h3>
+            <a href="#">VER COLEÇÃO →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800&q=80"
+              alt="Fitwear">
+          </div>
+          <div class="card-content">
+            <span class="card-number">03</span>
+            <h3>FITWEAR</h3>
+            <a href="#">VER COLEÇÃO →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80"
+              alt="Jeans">
+          </div>
+          <div class="card-content">
+            <span class="card-number">04</span>
+            <h3>JEANS</h3>
+            <a href="#">VER COLEÇÃO →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="split-section" id="novidades">
+      <div class="split-text">
+        <span class="section-number">03 / DESTAQUE</span>
+        <h2 style="font-size: 2rem; font-weight: 400; margin-bottom: 1rem; color: var(--text-dark);">Coleção Cápsula
+        </h2>
+        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 2rem;">
+          Peças exclusivas desenhadas para transitar entre as estações.
+          Descubra uma curadoria de texturas premium e cortes impecáveis que
+          elevam a sua presença em qualquer ambiente, unindo conforto e sofisticação.
+        </p>
+        <a href="/catalogo.html" class="hero-button" style="display: inline-block;">
+          VER DETALHES
+        </a>
+      </div>
+      <div class="split-image" style="overflow: hidden;">
+        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80"
+          alt="Detalhes da Coleção Cápsula" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+      </div>
+    </section>
+
+    <!-- Segunda seção (Invertida) -->
+    <section class="split-section reverse">
+      <div class="split-image" style="overflow: hidden;">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+          alt="Mulher vestindo alfaiataria" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+      </div>
+      <div class="split-text">
+        <span class="section-number">04 / ESSENCIAL</span>
+        <h2 style="font-size: 2rem; font-weight: 400; margin-bottom: 1rem; color: var(--text-dark);">O Caimento Perfeito
+        </h2>
+        <p style="color: var(--text-muted); line-height: 1.6;">
+          Acreditamos que a verdadeira elegância mora na liberdade de movimento. Nossa nova linha
+          de alfaiataria desconstruída traz leveza sem perder a presença e a atitude que você procura
+          para o dia a dia.
+        </p>
+      </div>
+    </section>
+
+    <!-- SEÇÃO LOCALIZAÇÃO (Preservada da versão Incoming) -->
+    <section class="secaoLocalizacao" id="sobre">
+      <div class="localizacaoConteudo">
+        <div class="localizacaoInfo">
+          <span class="localizacaoTitulo">NOSSO ENDEREÇO</span>
+          <h2>CLOSET</h2>
+
+          <p class="localizacaoEndereco">
+            Av. Andradina, 612 - Itaipu A,<br />
+            Foz do Iguaçu — PR, CEP 85861-010
           </p>
-          
-          <div class="hero-actions">
-            <!-- Link ajustado para manter a funcionalidade do Incoming -->
-            <a href="/catalogo.html" class="hero-button">EXPLORAR COLEÇÃO</a>
-            <a href="#novidades" class="hero-link">VER NOVIDADES →</a>
-          </div>
-        </div>
 
-        <div class="hero-image">
-          <div class="hero-image-top">ESSENTIALS / 01</div>
-          <div class="hero-letter">C</div>
-          <div class="hero-image-line"></div>
-          <div class="hero-image-bottom">ELEGÂNCIA EM MOVIMENTO</div>
-        </div>
-      </section>
-
-      <!-- 2. GRELHA DE 3 COLUNAS (Da versão Current) -->
-      <section class="grid-section">
-        <div class="section-header">
-          <span class="section-number">01 / ESTILO</span>
-          <h2>Para cada momento</h2>
-          <p>Seu estilo não precisa escolher um só caminho.</p>
-        </div>
-
-        <div class="card-grid-3">
-          <article class="card">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80" alt="Moda casual">
+          <div class="horarios">
+            <h3>HORÁRIOS DE ATENDIMENTO</h3>
+            <div class="horarioItem">
+              <span>Segunda a Sexta:</span>
+              <strong>10:00 às 18:30</strong>
             </div>
-            <div class="card-content">
-              <span class="card-number">01</span>
-              <h3>CASUAL</h3>
-              <p>Leve, versátil e feito para a rotina.</p>
+            <div class="horarioItem">
+              <span>Sábados:</span>
+              <strong>10:00 às 14:00</strong>
             </div>
-          </article>
-
-          <article class="card">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" alt="Moda esportiva">
-            </div>
-            <div class="card-content">
-              <span class="card-number">02</span>
-              <h3>ESPORTIVO</h3>
-              <p>Movimento com personalidade e estilo.</p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=800&q=80" alt="Moda esporte fino">
-            </div>
-            <div class="card-content">
-              <span class="card-number">03</span>
-              <h3>ESPORTE FINO</h3>
-              <p>Elegância para quando o momento pede algo a mais.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 3. GRELHA DE 4 COLUNAS (Da versão Current) -->
-      <section class="grid-section novos-olhares" id="colecao">
-        <div class="section-header">
-          <span class="section-number">02 / COLEÇÃO</span>
-          <h2>Novos Olhares</h2>
-          <p>Descubra o que chegou à Closet.</p>
-        </div>
-
-        <div class="card-grid-4">
-          <article class="card">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80" alt="Alfaiataria">
-            </div>
-            <div class="card-content">
-              <span class="card-number">01</span>
-              <h3>ALFAIATARIA</h3>
-              <a href="#">VER COLEÇÃO →</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=800&q=80" alt="Moda casual">
-            </div>
-            <div class="card-content">
-              <span class="card-number">02</span>
-              <h3>CASUAL</h3>
-              <a href="#">VER COLEÇÃO →</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800&q=80" alt="Fitwear">
-            </div>
-            <div class="card-content">
-              <span class="card-number">03</span>
-              <h3>FITWEAR</h3>
-              <a href="#">VER COLEÇÃO →</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80" alt="Jeans">
-            </div>
-            <div class="card-content">
-              <span class="card-number">04</span>
-              <h3>JEANS</h3>
-              <a href="#">VER COLEÇÃO →</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- SEÇÃO LOCALIZAÇÃO (Preservada da versão Incoming) -->
-      <section class="secaoLocalizacao" id="sobre">
-        <div class="localizacaoConteudo">
-          <div class="localizacaoInfo">
-            <span class="localizacaoTitulo">NOSSO ENDEREÇO</span>
-            <h2>CLOSET</h2>
-            
-            <p class="localizacaoEndereco">
-              Av. Andradina, 612 - Itaipu A,<br />
-              Foz do Iguaçu — PR, CEP 85861-010
-            </p>
-
-            <div class="horarios">
-              <h3>HORÁRIOS DE ATENDIMENTO</h3>
-              <div class="horarioItem">
-                <span>Segunda a Sexta:</span>
-                <strong>10:00 às 18:30</strong>
-              </div>
-              <div class="horarioItem">
-                <span>Sábados:</span>
-                <strong>10:00 às 14:00</strong>
-              </div>
-              <div class="horarioItem">
-                <span>Domingos:</span>
-                <strong>Fechado</strong>
-              </div>
-            </div>
-
-            <div class="botoesLocalizacao">
-              <a target="_blank" class="btnMapa btnGoogle localizacao">
-                ▣ &nbsp; GOOGLE MAPS
-              </a>
+            <div class="horarioItem">
+              <span>Domingos:</span>
+              <strong>Fechado</strong>
             </div>
           </div>
 
-          <div class="localizacaoImagem">
-            <img src="/public/img/geral/porta-da-loja.png" alt="Fachada da loja CLOSET" />
+          <div class="botoesLocalizacao">
+            <a target="_blank" class="btnMapa btnGoogle localizacao">
+              ▣ &nbsp; GOOGLE MAPS
+            </a>
           </div>
         </div>
-      </section>
 
-      <!-- 5. FEED DE INSTAGRAM (Da versão Current) -->
-      <section class="social-feed">
-        <h2>Siga a Closet</h2>
-        <div class="instagram-grid-5">
-          <!-- 5 Imagens -->
+        <div class="localizacaoImagem">
+          <img src="/public/img/geral/porta-da-loja.png" alt="Fachada da loja CLOSET" />
         </div>
-      </section>
+      </div>
+    </section>
 
-    </main>
+    <!-- 5. FEED DE INSTAGRAM (Da versão Current) -->
+    <section class="social-feed" style="margin-top: 4rem;">
+      <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
+        <h2 style="font-size: 2rem; font-weight: 400; color: var(--text-dark); margin-bottom: 0.5rem;">Siga a Closet
+        </h2>
+        <p>
+          <a href="https://www.instagram.com/closet.foz/" target="_blank"
+            style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.05em;">
+            @CLOSET.FOZ
+          </a>
+        </p>
+      </div>
+
+      <div class="instagram-grid-5">
+        <!-- Imagem 1 -->
+        <div>
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=400&q=80"
+            alt="Look Instagram 1" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+        </div>
+        <!-- Imagem 2 -->
+        <div>
+          <img src="https://images.unsplash.com/photo-1550614000-4b95d8582ce6?auto=format&fit=crop&w=400&q=80"
+            alt="Look Instagram 2" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+        </div>
+        <!-- Imagem 3 -->
+        <div>
+          <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=400&q=80"
+            alt="Look Instagram 3" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+        </div>
+        <!-- Imagem 4 -->
+        <div>
+          <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&w=400&q=80"
+            alt="Look Instagram 4" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+        </div>
+        <!-- Imagem 5 -->
+        <div>
+          <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&w=400&q=80"
+            alt="Look Instagram 5" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+        </div>
+      </div>
+    </section>
 
     <!-- FOOTER FUNCIONAL (Da versão Incoming) -->
     <footer class="footer">
@@ -252,5 +330,6 @@
     </footer>
 
     <script type="module" src="/src/js/pages/home.js"></script>
-  </body>
+</body>
+
 </html>
