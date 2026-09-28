@@ -1,0 +1,345 @@
+.conteudoPrincipal {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.hero {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    padding: 25px 4.5% 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7%;
+}
+.containerTextoHero {
+
+    flex: 1;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subtituloTrilha {
+    margin-bottom: 22px;
+    font-size: 7px;
+    color: #7b7771;
+}
+
+.containerTextoHero h1 {
+    max-width: 530px;
+    margin-bottom: 18px;
+    font-size: clamp(38px, 4vw, 58px);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -1.5px;
+    color: #252321;
+}
+
+.descricaoHero {
+    max-width: 380px;
+    margin-bottom: 24px;
+    font-size: 11px;
+    line-height: 1.55;
+    color: #4e4b47;
+}
+
+.containerBotoesAcao {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.btnExplorarColecao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: #343230;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+.btnExplorarColecao:hover {
+    background-color: #1f1e1c;
+    transform: translateY(-1px);
+}
+.btnVerNovidades {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #3e3b38;
+   
+}
+
+
+.btnVerNovidades:hover {
+    opacity: 0.55;
+}
+
+.containerImagemHero {
+    flex: 1;
+    max-width: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgBannerPrincipal {
+    width: 100%;
+    max-width: 520px;
+    aspect-ratio: 1.12 / 1;
+    object-fit: cover;
+}
+
+.secaoLocalizacao {
+  width: 100%;
+  padding: 70px 20px;
+
+}
+
+.localizacaoConteudo {
+  max-width: 1200px;
+  padding: 25px 4.5% 35px;
+  display: grid;
+  grid-template-columns: 1fr 1.45fr;
+  gap: 38px;
+  align-items: center;
+}
+
+.localizacaoInfo {
+  display: flex;
+  flex-direction: column;
+}
+.localizacaoTitulo {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.localizacaoInfo h2 {
+  margin: 0 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.localizacaoEndereco {
+  margin: 0;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.horarios {
+  background: #eeece7;
+  padding: 16px 14px;
+  margin-bottom: 22px;
+}
+
+.horarios h3 {
+  margin: 0 0 12px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.horarioItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+.horarioItem:last-child {
+  margin-bottom: 0;
+}
+
+.horarioItem strong {
+  font-weight: 500;
+  color: #222;
+  text-align: right;
+}
+
+.botoesLocalizacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.btnMapa {
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  transition: 0.2s ease;
+}
+
+.btnGoogle {
+  background: #050505;
+  color: #fff;
+}
+
+.btnGoogle:hover {
+  background: #222;
+}
+
+.btnWaze {
+  background: #e7e5e1;
+  color: #333;
+}
+
+.btnWaze:hover {
+  background: #dcdad5;
+}
+
+.localizacaoImagem {
+  position: relative;
+  width: 100%;
+  height: 293px;
+  overflow: hidden;
+}
+
+.localizacaoImagem img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+
+    .hero {
+        gap: 40px;
+    }
+
+    .containerTextoHero h1 {
+        font-size: clamp(34px, 5vw, 48px);
+    }
+
+    .containerImagemHero {
+        max-width: 450px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .hero {
+        min-height: auto;
+        padding: 45px 6% 60px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 45px;
+    }
+    .containerImagemHero {
+        order: 1;
+        width: 100%;
+        max-width: none;
+    }
+    .containerTextoHero {
+        order: 2;
+        max-width: none;
+    }
+    .subtituloTrilha {
+        margin-bottom: 18px;
+    }
+    .containerTextoHero h1 {
+        max-width: 600px;
+        font-size: clamp(38px, 11vw, 56px);
+        line-height: 0.98;
+    }
+    .descricaoHero {
+        max-width: 430px;
+        font-size: 11px;
+    }
+    .containerImagemHero {
+        width: 100%;
+        max-width: none;
+    }
+    #imgBannerPrincipal {
+        width: 100%;
+    }
+    .secaoLocalizacao {
+        padding: 50px 20px;
+    }
+
+    .localizacaoConteudo {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .localizacaoImagem {
+        height: 350px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    #btnWhatsApp {
+        padding: 8px 13px;
+        font-size: 8px;
+    }
+    .hero {
+        padding: 35px 5% 45px;
+        gap: 35px;
+    }
+    .containerTextoHero h1 {
+        font-size: 39px;
+        letter-spacing: -1px;
+    }
+    .descricaoHero {
+        font-size: 10px;
+    }
+    .containerBotoesAcao {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+    .btnExplorarColecao {
+        min-height: 34px;
+        padding: 0 16px;
+    }
+    .secaoLocalizacao {
+    padding: 40px 16px;
+    }
+
+    .localizacaoInfo h2 {
+        font-size: 20px;
+    }
+
+    .horarioItem {
+        font-size: 11px;
+    }
+
+    .botoesLocalizacao {
+        grid-template-columns: 1fr;
+    }
+
+    .btnMapa {
+        height: 38px;
+    }
+
+    .localizacaoImagem {
+        height: 250px;
+    }
+}
