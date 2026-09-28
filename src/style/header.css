@@ -1,11 +1,13 @@
 .headerPrincipal {
     width: 100%;
     top: 0;
-    padding: 18px 4.5%;
+    padding: 20px 5%;
     position: fixed;
     z-index: 1000;
     background-color: #f6f4ee;
-   
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    transition: padding 0.3s ease;
 }
 
 .containerHeader {
@@ -17,8 +19,9 @@
 }
 
 .logo {
-    font-size: 18px;
-    white-space: nowrap;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 .menuNavegacao {
@@ -36,10 +39,26 @@
 
 .listaNavegacao a {
     position: relative;
-    font-size: 9px;
-    letter-spacing: 0.3px;
-    color: #45423e;
-    transition: opacity 0.2s ease;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+.listaNavegacao a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--text-dark);
+    transition: width 0.3s ease;
+}
+
+.listaNavegacao a:hover::after {
+    width: 100%;
 }
 
 .listaNavegacao a:hover {
@@ -65,8 +84,8 @@
 }
 
 #btnWhatsApp:hover {
-    transform: translateY(-1px);
-    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .btnMenu {
