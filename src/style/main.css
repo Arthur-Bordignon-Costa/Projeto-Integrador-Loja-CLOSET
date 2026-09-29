@@ -472,6 +472,10 @@
   text-transform: uppercase;
 }
 
+.split-text p {
+  margin-top: 20px;
+}
+
 .section-header h2 {
   margin: 0 0 0.6rem;
   color: var(--text-dark);
