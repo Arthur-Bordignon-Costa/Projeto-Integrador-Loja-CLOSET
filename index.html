@@ -6,8 +6,6 @@
   <link rel="icon" type="image/png" href="/public/img/logo/icon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CLOSET</title>
-
-  <!-- CSS Separado (Herdado da versão Incoming) -->
   <link rel="stylesheet" href="src/style/global.css" />
   <link rel="stylesheet" href="src/style/header.css" />
   <link rel="stylesheet" href="src/style/main.css" />
@@ -15,7 +13,6 @@
 </head>
 
 <body>
-  <!-- HEADER FUNCIONAL (Da versão Incoming) -->
   <header class="headerPrincipal">
     <div class="containerHeader">
       <button class="btnMenu" id="btnMenu" aria-label="Abrir menu">
@@ -43,8 +40,6 @@
   </header>
 
   <main class="conteudoPrincipal">
-
-    <!-- 1. NOVO HERO SECTION (Da versão Current) -->
     <section class="hero-section">
       <div class="hero-text">
         <span class="badge">CLOSET / NOVA COLEÇÃO</span>
@@ -57,7 +52,6 @@
         </p>
 
         <div class="hero-actions">
-          <!-- Link ajustado para manter a funcionalidade do Incoming -->
           <a href="/catalogo.html" class="hero-button">EXPLORAR COLEÇÃO</a>
           <a href="#novidades" class="hero-link">VER NOVIDADES →</a>
         </div>
@@ -71,7 +65,6 @@
       </div>
     </section>
 
-    <!-- 2. GRELHA DE 3 COLUNAS (Da versão Current) -->
     <section class="grid-section">
       <div class="section-header">
         <span class="section-number">01 / ESTILO</span>
@@ -79,7 +72,7 @@
         <p>Seu estilo não precisa escolher um só caminho.</p>
       </div>
 
-      <div class="card-grid-3">
+      <div class="card-grid-1">
         <article class="card">
           <div class="card-image">
             <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80"
@@ -118,7 +111,6 @@
       </div>
     </section>
 
-    <!-- 3. GRELHA DE 4 COLUNAS (Da versão Current) -->
     <section class="grid-section novos-olhares" id="colecao">
       <div class="section-header">
         <span class="section-number">02 / COLEÇÃO</span>
@@ -126,7 +118,7 @@
         <p>Descubra o que chegou à Closet.</p>
       </div>
 
-      <div class="card-grid-4">
+      <div class="card-grid-2">
         <article class="card">
           <div class="card-image">
             <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80"
@@ -180,42 +172,31 @@
     <section class="split-section" id="novidades">
       <div class="split-text">
         <span class="section-number">03 / DESTAQUE</span>
-        <h2 style="font-size: 2rem; font-weight: 400; margin-bottom: 1rem; color: var(--text-dark);">Coleção Cápsula
-        </h2>
-        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 2rem;">
-          Peças exclusivas desenhadas para transitar entre as estações.
-          Descubra uma curadoria de texturas premium e cortes impecáveis que
-          elevam a sua presença em qualquer ambiente, unindo conforto e sofisticação.
+        <h2>Seu estilo não precisa escolher um só caminho.</h2>
+        <p>
+         Do cotidiano aos momentos que pedem algo a mais, a Closet acredita em uma moda que acompanha você - com personalidade, leveza e elegância.
         </p>
-        <a href="/catalogo.html" class="hero-button" style="display: inline-block;">
-          VER DETALHES
-        </a>
       </div>
       <div class="split-image" style="overflow: hidden;">
         <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80"
-          alt="Detalhes da Coleção Cápsula" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+          alt="Detalhes da Coleção Cápsula"/>
       </div>
     </section>
 
-    <!-- Segunda seção (Invertida) -->
-    <section class="split-section reverse">
+    <section class="split-section">
       <div class="split-image" style="overflow: hidden;">
         <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
-          alt="Mulher vestindo alfaiataria" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+          alt="Mulher vestindo alfaiataria"/>
       </div>
       <div class="split-text">
         <span class="section-number">04 / ESSENCIAL</span>
-        <h2 style="font-size: 2rem; font-weight: 400; margin-bottom: 1rem; color: var(--text-dark);">O Caimento Perfeito
-        </h2>
-        <p style="color: var(--text-muted); line-height: 1.6;">
-          Acreditamos que a verdadeira elegância mora na liberdade de movimento. Nossa nova linha
-          de alfaiataria desconstruída traz leveza sem perder a presença e a atitude que você procura
-          para o dia a dia.
+        <h2>Vista o seu movimento.</h2>
+        <p>
+          Peças que transitam entre a rotina, o movimento e os momentos especiais.
         </p>
       </div>
     </section>
 
-    <!-- SEÇÃO LOCALIZAÇÃO (Preservada da versão Incoming) -->
     <section class="secaoLocalizacao" id="sobre">
       <div class="localizacaoConteudo">
         <div class="localizacaoInfo">
@@ -256,49 +237,6 @@
       </div>
     </section>
 
-    <!-- 5. FEED DE INSTAGRAM (Da versão Current) -->
-    <section class="social-feed" style="margin-top: 4rem;">
-      <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
-        <h2 style="font-size: 2rem; font-weight: 400; color: var(--text-dark); margin-bottom: 0.5rem;">Siga a Closet
-        </h2>
-        <p>
-          <a href="https://www.instagram.com/closet.foz/" target="_blank"
-            style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.05em;">
-            @CLOSET.FOZ
-          </a>
-        </p>
-      </div>
-
-      <div class="instagram-grid-5">
-        <!-- Imagem 1 -->
-        <div>
-          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=400&q=80"
-            alt="Look Instagram 1" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-        </div>
-        <!-- Imagem 2 -->
-        <div>
-          <img src="https://images.unsplash.com/photo-1550614000-4b95d8582ce6?auto=format&fit=crop&w=400&q=80"
-            alt="Look Instagram 2" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-        </div>
-        <!-- Imagem 3 -->
-        <div>
-          <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=400&q=80"
-            alt="Look Instagram 3" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-        </div>
-        <!-- Imagem 4 -->
-        <div>
-          <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&w=400&q=80"
-            alt="Look Instagram 4" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-        </div>
-        <!-- Imagem 5 -->
-        <div>
-          <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&w=400&q=80"
-            alt="Look Instagram 5" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER FUNCIONAL (Da versão Incoming) -->
     <footer class="footer">
       <div class="footerTopo">
         <div class="footerMarca">
