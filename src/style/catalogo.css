@@ -1,0 +1,220 @@
+.catalogoHero {
+    padding: 60px 5% 0;
+}
+
+.catalogoHero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+.catalogoHero p {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    max-width: 400px;
+}
+
+.catalogoFiltros {
+    padding: 32px 5% 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filtrosLista {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding-bottom: 0;
+}
+
+.filtroBotao {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0 0 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.filtroBotao:hover {
+    color: var(--text-dark);
+}
+
+.filtroBotao.ativo {
+    color: var(--text-dark);
+    border-bottom-color: var(--text-dark);
+}
+
+.catalogoGrid {
+    padding: 48px 5% 80px;
+}
+
+.produtosGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px 24px;
+}
+
+.produtoCard {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    animation: fadeInCard 0.4s ease both;
+}
+
+.produtoCard.oculto {
+    display: none;
+}
+
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.produtoImagem {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background-color: var(--card-bg);
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+.produtoImagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.produtoCard:hover .produtoImagem img {
+    transform: scale(1.04);
+}
+
+.produtoInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.produtoNome {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.2px;
+}
+
+.produtoCategoria {
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+}
+
+.produtoPreco {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+    margin-top: 4px;
+}
+
+.nenhumResultado {
+    display: none;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 0;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.nenhumResultado.visivel {
+    display: block;
+}
+
+@media (max-width: 1100px) {
+    .produtosGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .catalogoHero {
+        padding: 40px 5% 0;
+    }
+
+    .catalogoHero h1 {
+        font-size: clamp(1.8rem, 7vw, 2.8rem);
+    }
+
+    .catalogoFiltros {
+        padding-top: 24px;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .catalogoFiltros::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filtrosLista {
+        gap: 20px;
+        min-width: max-content;
+    }
+
+    .produtosGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 16px;
+    }
+
+    .catalogoGrid {
+        padding: 36px 5% 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalogoHero {
+        padding: 30px 5% 0;
+    }
+    .catalogoHero h1 {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .catalogoHero p {
+        font-size: 12px;
+    }
+    .filtroBotao {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .produtosGrid {
+        gap: 20px 12px;
+    }
+    .produtoNome {
+        font-size: 12px;
+    }
+
+    .produtoPreco {
+        font-size: 12px;
+    }
+}

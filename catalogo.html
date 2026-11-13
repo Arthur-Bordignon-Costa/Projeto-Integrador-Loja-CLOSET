@@ -4,18 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/public/img/logo/icon.png" type="image/x-icon">
-    <title>CLOSET</title>
+    <title>Produtos — CLOSET</title>
     <link rel="stylesheet" href="/src/style/global.css">
     <link rel="stylesheet" href="/src/style/header.css">
     <link rel="stylesheet" href="/src/style/footer.css">
-
+    <link rel="stylesheet" href="/src/style/catalogo.css">
 </head>
 <body>
     <div id="componentHeader"></div>
     <main>
-        <h1>Em Breve</h1>
-        <p>Catálogo de Produtos</p>
+        <section class="catalogoHero">
+            <h1>PRODUTOS</h1>
+            <p>Encontre peças para diferentes momentos, do casual ao elegante.</p>
+        </section>
+        <section class="catalogoFiltros">
+            <ul class="filtrosLista">
+                <li>
+                    <button class="filtroBotao ativo" data-filtro="todos">TODOS</button>
+                </li>
+                <li>
+                    <button class="filtroBotao" data-filtro="casual">CASUAL</button>
+                </li>
+                <li>
+                    <button class="filtroBotao" data-filtro="esportivo">ESPORTIVO</button>
+                </li>
+                <li>
+                    <button class="filtroBotao" data-filtro="esporte-fino">ESPORTE FINO</button>
+                </li>
+            </ul>
+        </section>
+        <section class="catalogoGrid">
+            <div class="produtosGrid" id="produtosGrid"></div>
+        </section>
+
     </main>
+
     <div id="componentFooter"></div>
     <script type="module" src="/src/components/components.js"></script>
     <script type="module" src="/src/js/pages/catalogo.js"></script>
