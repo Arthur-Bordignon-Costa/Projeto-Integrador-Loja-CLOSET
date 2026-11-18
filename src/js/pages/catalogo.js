@@ -1,4 +1,4 @@
-const produtos = [
+export const produtos = [
     {
         id: 1,
         nome: "Camisa Essencial",
@@ -121,6 +121,16 @@ function configurarFiltros() {
         });
     });
 }
+const gridProdutos = document.getElementById("produtosGrid");
 
+if (gridProdutos) {
+    gridProdutos.addEventListener("click", (evento) => {
+        const card = evento.target.closest(".produtoCard");
+
+        if (!card) return;
+
+        window.location.href = `produto.html?id=${card.dataset.id}`;
+    });
+}
 renderizarProdutos();
 configurarFiltros();

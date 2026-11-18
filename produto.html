@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/public/img/logo/icon.png" type="image/x-icon">
+
+    <title>Produto — CLOSET</title>
+
+    <link rel="stylesheet" href="/src/style/global.css">
+    <link rel="stylesheet" href="/src/style/header.css">
+    <link rel="stylesheet" href="/src/style/footer.css">
+    <link rel="stylesheet" href="/src/style/produto.css">
+</head>
+
+<body>
+    <div id="componentHeader"></div>
+
+    <main class="detalheProduto">
+        <a href="catalogo.html" class="voltarCatalogo">
+            ← VOLTAR AO CATÁLOGO
+        </a>
+
+        <section class="produtoDetalhes">
+            <div class="galeriaProduto">
+                <img id="imagemPrincipal" class="imagemPrincipal" src="" alt="">
+
+                <div class="imagensSecundarias">
+                    <img id="imagemSecundaria1" src="" alt="">
+                    <img id="imagemSecundaria2" src="" alt="">
+                </div>
+            </div>
+
+            <div class="informacoesProduto">
+                <span id="categoriaProduto" class="categoriaDetalhe"></span>
+
+                <h1 id="nomeProduto"></h1>
+
+                <p id="precoProduto" class="precoDetalhe"></p>
+
+                <div class="descricaoProduto">
+                    <h2>Sobre o produto</h2>
+                    <p id="descricaoProduto"></p>
+                </div>
+
+                <div class="tamanhosProduto">
+                    <h2>Tamanhos</h2>
+                    <p>Consulte a disponibilidade de tamanhos pelo WhatsApp.</p>
+                </div>
+
+                <a id="btnInteresse" class="btnInteresse" href="#" target="_blank" rel="noopener noreferrer">
+                    TENHO INTERESSE
+                </a>
+
+                <p class="avisoWhatsApp">
+                    Entre em contato para saber mais sobre este produto.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div id="componentFooter"></div>
+
+    <script type="module" src="/src/components/components.js"></script>
+    <script type="module" src="/src/js/pages/produto.js"></script>
+</body>
+</html>
