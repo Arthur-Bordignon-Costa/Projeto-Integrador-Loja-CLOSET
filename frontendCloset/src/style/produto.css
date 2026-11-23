@@ -1,0 +1,182 @@
+.detalheProduto {
+    padding: 28px 5% 56px;
+}
+
+.voltarCatalogo {
+    display: inline-block;
+    margin-bottom: 22px;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.voltarCatalogo:hover {
+    color: var(--text-dark);
+}
+
+.produtoDetalhes {
+    display: grid;
+    max-width: 1120px;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+    gap: clamp(32px, 4vw, 52px);
+    align-items: start;
+}
+
+.galeriaProduto[hidden],
+.informacoesProduto[hidden] {
+    display: none;
+}
+
+.produtoDetalhes.semImagem {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.estadoProduto {
+    grid-column: 1 / -1;
+    padding: 60px 0;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.galeriaProduto {
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.imagemProduto {
+    width: auto;
+    height: min(68vh, 540px);
+    max-width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    background: var(--card-bg);
+}
+
+.informacoesProduto {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.categoriaDetalhe {
+    margin-bottom: 15px;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.informacoesProduto h1 {
+    margin-bottom: 8px;
+    color: var(--text-dark);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 400;
+}
+
+.precoDetalhe {
+    margin-bottom: 24px;
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.descricaoProduto,
+.tamanhosProduto {
+    padding: 16px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.descricaoProduto h2,
+.tamanhosProduto h2 {
+    margin-bottom: 12px;
+    color: var(--text-dark);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.descricaoProduto p,
+.listaVariacoes {
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.listaVariacoes {
+    display: grid;
+    gap: 8px;
+}
+
+.listaVariacoes li {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 2px 12px;
+    align-items: center;
+}
+
+.listaVariacoes strong {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.listaVariacoes small {
+    grid-column: 1 / -1;
+    font-size: 11px;
+}
+
+.btnInteresse {
+    display: block;
+    width: 100%;
+    margin-top: 14px;
+    padding: 15px;
+    background-color: #218838;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-align: center;
+    transition: background 0.2s ease;
+}
+
+.btnInteresse:hover {
+    background-color: #176b2b;
+}
+
+.avisoWhatsApp {
+    margin-top: 14px;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .detalheProduto {
+        padding-top: 24px;
+    }
+
+    .produtoDetalhes {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .imagemProduto {
+        width: 100%;
+        height: auto;
+        max-height: min(65vh, 500px);
+    }
+
+    .informacoesProduto {
+        padding-top: 0;
+    }
+
+    .precoDetalhe {
+        margin-bottom: 25px;
+    }
+}

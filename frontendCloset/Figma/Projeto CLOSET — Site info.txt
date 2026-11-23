@@ -1,0 +1,28 @@
+Projeto: CLOSET — Site
+Desktop: 1440px
+Mobile: 390px
+
+Fontes:
+- Cormorant Garamond — títulos/editorial/logo
+- DM Sans — interface/textos
+
+Fundo:
+#F6F2EC
+
+Texto principal:
+#1F1F1F / #22211F
+
+Texto secundário:
+#73706B / #8F8B84
+
+Cinza de imagem:
+#D1CCC2 / #D1CFC9
+
+Branco:
+#FFFFFF
+
+WhatsApp:
+#25D363
+
+Rodapé:
+#292827

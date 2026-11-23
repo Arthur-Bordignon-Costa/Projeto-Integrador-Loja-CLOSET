@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/public/img/logo/icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — CLOSET Admin</title>
+  <link rel="stylesheet" href="src/style/login.css" />
+</head>
+
+<body>
+
+  <div class="loginBg"></div>
+
+  <div class="loginWrapper">
+    <div class="loginCard">
+
+      <div class="loginLogo">
+        <h1 class="loginMarca">Closet</h1>
+        <span class="loginLogoSub">ADMIN</span>
+      </div>
+
+      <h2 class="loginTitulo">Entrar no Sistema</h2>
+
+      <form id="formLogin" novalidate>
+
+        <div class="loginCampo">
+          <label for="inputUsuario">Usuário</label>
+          <input
+            type="text"
+            id="inputUsuario"
+            placeholder="Seu usuário..."
+            autocomplete="username"
+            required
+          />
+        </div>
+
+        <div class="loginCampo">
+          <label for="inputSenha">Senha</label>
+          <input
+            type="password"
+            id="inputSenha"
+            placeholder="Sua senha..."
+            autocomplete="current-password"
+            required
+          />
+        </div>
+
+        <p id="erroLogin" class="loginErro" aria-live="polite"></p>
+
+        <button type="submit" id="btnEntrar" class="btnEntrar">Entrar</button>
+
+      </form>
+
+      <a href="/index.html" class="loginVoltar">← Voltar ao site</a>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/pages/login.js"></script>
+</body>
+</html>

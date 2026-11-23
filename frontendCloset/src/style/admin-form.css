@@ -1,0 +1,272 @@
+.formViewHeader,#formProduto { max-width: 760px; }
+
+.formViewHeader { margin-bottom: 1.5rem; }
+
+.formCard {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.formSecaoTitulo {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1.25rem;
+}
+
+.formSecaoHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.formCampo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+.formCampo:last-child { margin-bottom: 0; }
+
+.formCampo label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #555;
+    letter-spacing: 0.02em;
+}
+
+.formCampo input,
+.formCampo select {
+    padding: 0.65rem 0.9rem;
+    border: 1.5px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.92rem;
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+}
+.formCampo input:focus,
+.formCampo select:focus { border-color: #1a1a1a; }
+.formCampo input::placeholder { color: #bbb; }
+
+.formLinha {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.uploadArea {
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    min-height: 100px;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    overflow: hidden;
+    position: relative;
+}
+.uploadArea:hover { border-color: #aaa; background: #fafafa; }
+.uploadArea.dragover { border-color: #1a1a1a; background: #f5f4f1; }
+.uploadArea.desabilitado { cursor: default; }
+.uploadArea.desabilitado:hover { border-color: #ddd; background: transparent; }
+
+.uploadPlaceholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.25rem;
+    text-align: center;
+    color: #bbb;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    pointer-events: none;
+}
+
+.uploadPlaceholder[hidden],
+.uploadPreview[hidden] { display: none; }
+
+.uploadPreview img {
+    width: 160px;
+    height: 110px;
+    object-fit: cover;
+    display: block;
+}
+
+.btnRemoverImagem {
+    background: none;
+    border: none;
+    color: #d9534f;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0.2rem 0;
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    margin-top: 0.3rem;
+    transition: color 0.2s;
+}
+.btnRemoverImagem:hover { color: #b52b27; }
+
+.uploadAviso {
+    display: block;
+    max-width: 360px;
+    margin-top: 0.35rem;
+    color: #888;
+    font-size: 0.72rem;
+}
+
+.btnAddVariante {
+    background: none;
+    border: 1.5px solid #c9a84c;
+    border-radius: 6px;
+    color: #c9a84c;
+    font-size: 0.82rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s;
+    white-space: nowrap;
+}
+.btnAddVariante:hover { background: #fdf8ec; }
+
+.listaVariantes { display: flex; flex-direction: column; gap: 1rem; }
+
+.varianteItem {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.varianteLabel {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #c9a84c;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: block;
+}
+
+.varianteColunas {
+    display: grid;
+    grid-template-columns: 100px 1fr 110px 100px 36px;
+    gap: 0.6rem;
+    align-items: flex-end;
+}
+
+.varianteCampo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.varianteCampo label {
+    font-size: 0.72rem;
+    color: #888;
+    font-weight: 500;
+}
+
+.varianteCampo input,
+.varianteCampo select {
+    padding: 0.5rem 0.6rem;
+    border: 1.5px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.88rem;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+    background: #fff;
+}
+.varianteCampo input:focus,
+.varianteCampo select:focus { border-color: #1a1a1a; }
+
+.btnRemoverVariante {
+    background: none;
+    border: 1px solid #e8b4b4;
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #d9534f;
+    font-size: 0.9rem;
+    transition: background 0.18s;
+    flex-shrink: 0;
+    align-self: flex-end;
+}
+.btnRemoverVariante:hover { background: #fdf0f0; }
+
+/* ── Erro do form ── */
+.formErro {
+    color: #d9534f;
+    font-size: 0.83rem;
+    min-height: 1em;
+    margin-bottom: 0.5rem;
+}
+
+.formBottom {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    padding-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.btnVoltar {
+    background: none;
+    border: 1.5px solid #ddd;
+    border-radius: 6px;
+    padding: 0.7rem 1.3rem;
+    font-size: 0.88rem;
+    font-family: 'Inter', sans-serif;
+    color: #555;
+    cursor: pointer;
+    transition: background 0.18s;
+}
+.btnVoltar:hover { background: #f5f4f1; }
+
+.btnSalvarForm {
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7rem 1.5rem;
+    font-size: 0.88rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btnSalvarForm:hover { background: #333; }
+
+@media (max-width: 768px) {
+    .formLinha { grid-template-columns: 1fr; }
+    .varianteColunas { grid-template-columns: 90px 1fr 90px; }
+    .varianteColunas .varianteCampo:nth-child(4) { grid-column: 1; }
+    .varianteColunas .btnRemoverVariante { grid-column: 3; justify-self: end; }
+    .formBottom { justify-content: stretch; flex-direction: column-reverse; }
+    .btnVoltar, .btnSalvarForm { width: 100%; text-align: center; }
+}
+
+@media (max-width: 480px) {
+    .formCard { padding: 1.25rem; }
+    .uploadArea { max-width: 100%; }
+}
